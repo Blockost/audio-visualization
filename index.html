@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Three.js App</title>
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Boostrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- jQuery lib -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- Boostrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- ThreeJS lib -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r71/three.min.js"></script>
+    <!-- Orbit Controls -->
+    <script src="js/OrbitControls.js"></script>
+</head>
+<body>
+    <div class="loader">
+        <div class="container">
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped active vertical-center" role="progressbar"
+                     aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+                </div>
+            </div>
+            <img id="play_button" src="css/play.png" alt="play" style="display: none; cursor: pointer;">
+        </div>
+        <!--<span id="credits" class="pull-down pull-right">
+            <a target="_blank" href="https://soundcloud.com/thursday-live-jam">Thursday Live Jam</a>
+        </span>-->
+    </div>
+    <!-- Personal JS scripts where the magic happens :) -->
+    <script type="text/javascript" src="js/viewBuilder.js"></script>
+    <script type="text/javascript" src="js/audioProcessing.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+/*
+    Typical workflow for audio app :
+
+     1 - Create audio context
+     2 - Inside the context, create sources — such as <audio>, oscillator, stream
+     3 - Create effects nodes, such as reverb, biquad filter, panner, compressor
+     4 - Choose final destination of audio, for example your system speakers
+     5 - Connect the sources up to the effects, and the effects to the destination
+
+ */
+
+var node_source_oscillator = audioContext.createOscillator();
+var node_effect_gain = audioContext.createGain();
+
+// Connect the nodes
+node_source_oscillator.connect(node_effect_gain);
+node_effect_gain.connect(audioContext.destination);
+
+node_source_oscillator.type = "sine"; // sine wave — other values are 'square', 'sawtooth', 'triangle' and 'custom'
+node_source_oscillator.frequency.value = 440; // value in hertz (La 440)
+//node_source_oscillator.start(); // Make sound !!
