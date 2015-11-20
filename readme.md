@@ -1,2 +1,2 @@
 # Audio Visualization 
-## sound spectrum generation
+## Sound spectrum generation
