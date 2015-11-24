@@ -43,8 +43,8 @@ renderer.setClearColor(0x0a111f);
 document.body.appendChild(renderer.domElement);
 
 
-//controls = new THREE.OrbitControls(camera);
-//controls.addEventListener('change', render);
+controls = new THREE.OrbitControls(camera);
+controls.addEventListener('change', render);
 
 
 // add Listeners
@@ -60,7 +60,7 @@ var render = function(){
     }
 
 
-    //controls.update();
+    controls.update();
     renderer.render(scene, camera);
     requestAnimationFrame(render);
 };
