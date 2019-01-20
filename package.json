@@ -1,0 +1,27 @@
+{
+  "name": "audiovisualization",
+  "version": "1.0.0",
+  "description": "Simple sound spectrum visualizer using Three.js",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Blockost/AudioVisualization.git"
+  },
+  "keywords": [
+    "threejs",
+    "audio-processing",
+    "web-audio-api"
+  ],
+  "author": "Blockost",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Blockost/AudioVisualization/issues"
+  },
+  "homepage": "https://github.com/Blockost/AudioVisualization#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
