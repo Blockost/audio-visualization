@@ -4,7 +4,8 @@
   "description": "Simple sound spectrum visualizer using Three.js",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0"
+    "build:prod": "echo 'Nothing to build here'",
+    "test": "echo 'Error: no test specified'"
   },
   "repository": {
     "type": "git",
